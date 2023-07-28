@@ -1,0 +1,81 @@
+#body{
+    position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: yellow;
+   height: 90vh;
+}
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(210, 251, 74);
+    margin-bottom: 40px;
+    width: 100%;
+    height: 60px;
+    box-shadow: 8px 10px  rgba(49, 48, 48, 0.3);
+    margin-top: 50px;
+}
+#header h1{
+    font-size: 1.5rem;
+}
+#main{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(170, 43, 255);
+    height: 300px;
+    width: 400px;
+    margin: auto;
+    border: 2px solid blue;
+    border-radius: 30px;
+    box-shadow: 8px 16px grey;
+    transition: all 0.3s ease-in-out;
+}
+#main:hover{
+    box-shadow: 3px 8px grey;
+}
+#watch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid yellow;
+    border-radius: 30px;
+    width: 100%;
+    height: 60%;
+}
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 30%;
+}
+@media only screen and (max-width: 430px){
+    #body{
+        overflow-y: scroll;
+    }
+    #main{
+        height: auto;
+        width: 100%;
+    }
+    #watch{
+        margin-bottom: 25px;
+        padding: 35px 0px;
+    }
+    #watch h1{
+        font-size: 3rem;
+    }
+    #buttons{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #buttons button{
+        margin: 8px 0px;
+        font-size: 2rem;
+    }
+}
